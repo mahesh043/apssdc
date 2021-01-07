@@ -1,0 +1,13 @@
+{% extends 'html/base.html' %}
+{% block title %} Loggedout {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="card col-md-6 mx-auto mt-4 shadow-lg">
+		<h2 class="bg-warning text-center text-dark p-2 mt-2 border rounded"><B>THANKYOU FOR USING EMOBILE BOOKING</B></h2>
+
+	<p><a href="{% url 'hm' %}" class="btn btn-dark text-light" style="margin-left: 10px;">Back</a>
+<!--<p style="margin-left: 50px">--><B style="margin-left: 100px;"></B><a href="{% url 'lgn' %}" class="btn btn-dark" style="margin-left: 200px;">Login</a></p>
+		</div>
+</div>
+{% endblock %}
+

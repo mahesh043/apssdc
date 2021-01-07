@@ -1,0 +1,54 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} mobiles {% endblock %}
+{% block content %}
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner " style="background-color:skyblue">
+    <div class="carousel-item active">
+      <img src="{% static 'images/rr1.png' %}"style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/rr2.png' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/rr3.png' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/rr4.png' %}" style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="container mt-5">
+  <h4><i><b>Redmi Note 9 Pro Max (Aurora Blue, 6GB RAM, 128GB Storage) - 64MP Quad Camera></b></i></h4>
+  <ul>
+    <li>64MP rear camera with ultra-wide, super macro, portrait, night mode, 960fps slowmotion, AI scene recognition, pro color, HDR, pro mode | 32MP front camera</li>
+    <li>16.9418 centimeters (6.67-inch) FHD+ LCD full screen dot display multi-touch capacitive touchscreen with 2400 x 1080 pixels resolution, 400 ppi pixel density and 20:9 aspect ratio | 2.5D curved glass</li>
+    <li>Android v10 operating system with 2.3GHz Qualcomm Snapdragon 720G with 8nm octa core processor
+</li>
+    <li>Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual-standby (4G+4G)</li>
+    <li>5020mAH lithium-polymer large battery providing talk-time of 29 hours and standby time of 492 hours | 33W fast charger in-box and Type-C connectivity</li>
+    <li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+    </ul>
+  </div>
+  <h3 style="margin-left: 500px;">
+          <b><i>₹18,499</i></b><br>
+         <a href="{% url 'boo1' %}"button type="button" class="btn btn-warning">Book Know</a></button>
+{% endblock %}

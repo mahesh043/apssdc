@@ -1,0 +1,53 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} mobiles {% endblock %}
+{% block content %}
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner " style="background-color:skyblue">
+    <div class="carousel-item active">
+      <img src="{% static 'images/r1.jpeg' %}"style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/r22.png' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/r3.jpeg' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/r4.jpeg' %}" style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="container mt-5">
+  <h4><i><b>Redmi Note 9 (Pebble Grey, 4GB RAM 64GB Storage) - 48MP Quad Camera & Full HD+ Display</b></i></h4>
+  <ul>
+    <li>48MP rear camera with ultra-wide, macro, depth sensor, portrait, night mode, ai scene recognition, hdr, pro mode | 13MP front camera</li>
+    <li>16.5862 centimeters (6.53-inch) FHD+ display with multi-touch capacitive touchscreen with 2340 x 1080 pixels resolution | 19.5:9 aspect ratio</li>
+    <li>Memory, Storage & SIM: 4GB RAM | 64GB internal memory expandable up to 512GB | Dual SIM (nano+nano) dual-standby (4G+4G)</li>
+    <li>Android v10 operating system with 2.0GHz Mediatek Helio G85 octa core processor with 12nm process, Helio G85</li>
+    <li>5020mAH lithium-polymer battery with 22.5W fast charger in-box | dedicated SD card support</li>
+    <li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+    </ul>
+  </div>
+  <h3 style="margin-left: 500px;">
+          <b><i>₹11,999</i></b><br>
+         <a href="{% url 'boo1' %}"button type="button" class="btn btn-warning">Book Know</a></button>
+{% endblock %}

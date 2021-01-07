@@ -1,0 +1,53 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} mobiles {% endblock %}
+{% block content %}
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner " style="background-color:skyblue">
+    <div class="carousel-item active">
+      <img src="{% static 'images/one11.png' %}"style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/one2.png' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/one3.png' %}" style="margin-left: 450px; margin-top: 20px"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/one4.png' %}" style="margin-left: 450px; margin-top: 20px" ></img>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div class="container mt-5">
+  <h4><i><b>(Renewed) OnePlus Nord 5G (Blue Marble, 8GB RAM, 128GB Storage)</b></i></h4>
+  <ul>
+    <li>48+13+8MP primary camera with 20MP front facing camera</li>
+    <li>16.23 centimeters (6.39-inch) AMOLED capacitive touchscreen with 2340 x 1080 pixels resolution, 403 ppi pixel density</li>
+    <li>Memory, Storage & SIM: 6GB RAM | 128GB storage | Dual SIM with dual standby (4G+4G)</li>
+    <li>Android v9 Pie operating system (Upgradable to Android Q) with 2.2GHz Qualcomm Snapdragon 730Octa core processor, Adreno 618 GPU</li>
+    <li>4000mAH lithium-polymer battery</li>
+    <li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+    </ul>
+  </div>
+  <h3 style="margin-left: 500px;">
+          <b><i>₹26,599</i></b><br>
+         <a href="{% url 'boo1' %}"button type="button" class="btn btn-warning">Book Know</a></button>
+{% endblock %}
